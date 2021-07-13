@@ -1,0 +1,17 @@
+oauth 
+client Id
+1006418862786-ogj1vruqe5anmes1cotn9m7ib708j99u.apps.googleusercontent.com
+
+client secret
+EpphivpwZJ3hAbzGIb3f4pwf
+
+
+
+cuisine code new 
+
+ if (cuisine.indexOf(cuisineId) == -1) {
+            cuisine.push(cuisineId);
+        } else {
+            const index = cuisine.indexOf(cuisineId);
+            cuisine.splice(index, 1);
+        }
