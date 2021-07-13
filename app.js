@@ -18,7 +18,7 @@ app.all('/*', function (req, res, next) {
 
 app.use('/', routes);
 mongoose.connect("mongodb+srv://newUser:newUserMongodb@cluster0.jklf5.mongodb.net/zomato_march?retryWrites=true&w=majority", {
-        useUnifiedTopology: true
+        useUnifiedTopology: true, useNewUrlParser: true
     })
     .then(() => {
         app.listen(port, host, () => {
